@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
 const LoginRouter = require('./routes/LoginRoutes')
-const Products = require('./routes/Products')
 
 const app = express();
 
@@ -23,12 +22,8 @@ app.get("/", async (req, res) => {
   res.send("hi")
 })
 
-//checkAuth middleware
-const checkAuth = require("./middlewares/checkAuth");
-
 //Routes
 app.use('/api', LoginRouter);
-app.use('/products',checkAuth, Products);
 
 const port = process.env.PORT || 5001
 
