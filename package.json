@@ -1,7 +1,7 @@
 {
-  "name": "Login/Auth API",
+  "name": "E-commerce Backend",
   "version": "1.0.0",
-  "description": "Rest API with Login and Register AUTH made using Node, Express and MongoDB",
+  "description": "E-commerce Backend made with Node, Express and MongoDB",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

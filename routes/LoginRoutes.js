@@ -1,5 +1,5 @@
 require('dotenv').config()
-const User = require("../models/User");
+const User = require("../models/UserSchema");
 const bcrypt = require("bcrypt");
 const express = require("express");
 const router = express.Router();
@@ -62,7 +62,6 @@ router.post("/login", async (req, res) => {
     } else {
         return res.status(400).json({ msg: "invalid credentials" });
     }
-
 
 });
 
